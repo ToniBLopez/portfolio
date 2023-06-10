@@ -1,2 +1,2 @@
-# third-portfolio
-3️⃣ This is my third and current 3D portfolio
+# Welcome to my portfolio
+This is my third and current 3D portfolio
