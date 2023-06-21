@@ -52,6 +52,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           '>
             <div
               onClick={() => window.open(source_code_link, '_blank')}
+              title="Github Repo"
               className='
                 flex
                 justify-center
@@ -61,6 +62,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
                 h-10
                 rounded-full
                 cursor-pointer
+                hover:scale-x-110
+                hover:scale-y-110
             '>
               <img
                 src={github}
