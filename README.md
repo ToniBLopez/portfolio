@@ -14,3 +14,4 @@ This is my third and current 3D portfolio
   - [Vite](https://vitejs.dev/) providing a fast and efficient development experience
   - [ESLint](https://eslint.org/) used to identify and report patterns or potential issues in JavaScript code
   - [Logo.com](https://logo.com/) simple and fast way to build a brand logo
+  - [EmailJS](https://www.emailjs.com/) send email directly from your code

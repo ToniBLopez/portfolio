@@ -54,7 +54,7 @@ const ExperienceCard = ({ experience }) => {
         </h3>
         <p
           className='
-          text-secondary
+            text-secondary
             text-[16px]
             font-semibold
           '

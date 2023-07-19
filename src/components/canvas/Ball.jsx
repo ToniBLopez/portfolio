@@ -10,8 +10,8 @@ import {
 
 import CanvasLoader from '../Loader'
 
-const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl])
+const Ball = ({ imgUrl }) => {
+  const [decal] = useTexture([imgUrl])
 
   return (
     <Float
@@ -44,15 +44,15 @@ const Ball = (props) => {
   )
 }
 
-const BallCanvas = ({ icon }) => {
+const BallCanvas = ({ icon, name }) => {
   return (
     <Canvas
-      frameloop='demand'
+      dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />} >
         <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
+        <Ball imgUrl={icon} name={name} />
       </Suspense>
       <Preload all />
     </Canvas>

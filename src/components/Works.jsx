@@ -3,11 +3,17 @@ import { motion } from "framer-motion"
 
 import { styles } from "../styles"
 import { github } from "../assets"
+import { gitlab } from "../assets"
+import { live } from "../assets"
+import { figmaforprojects } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
 import { fadeIn, textVariant } from "../utils/motion"
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, figma_link, source_code_link, live_link }) => {
+
+  const isGitlab = source_code_link.includes('gitlab.com')
+
   return (
     <motion.div
       variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
@@ -37,7 +43,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             className='
               w-full
               h-full
-              object-cover
+              object-fill
               rounded-2xl
           '/>
 
@@ -49,10 +55,41 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             justify-end
             m-3
             card-img_hover
+            gap-2
           '>
+            {
+              figma_link.length !== 0
+              &&
+              (
+                <div
+                  onClick={() => window.open(figma_link, '_blank')}
+                  title='Figma'
+                  className='
+                    flex
+                    justify-center
+                    items-center
+                    black-gradient
+                    w-10
+                    h-10
+                    rounded-full
+                    cursor-pointer
+                    hover:scale-x-110
+                    hover:scale-y-110
+                '>
+                  <img
+                    src={figmaforprojects}
+                    alt='figma'
+                    className='
+                      w-1/2
+                      h-1/2
+                      object-contain
+                    '/>
+                </div>
+              )
+            }
             <div
               onClick={() => window.open(source_code_link, '_blank')}
-              title="Github Repo"
+              title={isGitlab ? 'Gitlab Repo' : 'Github Repo'}
               className='
                 flex
                 justify-center
@@ -66,8 +103,32 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
                 hover:scale-y-110
             '>
               <img
-                src={github}
+                src={isGitlab ? gitlab : github}
                 alt='github'
+                className='
+                  w-1/2
+                  h-1/2
+                  object-contain
+                '/>
+            </div>
+            <div
+              onClick={() => window.open(live_link, '_blank')}
+              title="See Live"
+              className='
+                flex
+                justify-center
+                items-center
+                black-gradient
+                w-10
+                h-10
+                rounded-full
+                cursor-pointer
+                hover:scale-x-110
+                hover:scale-y-110
+            '>
+              <img
+                src={live}
+                alt='see live'
                 className='
                   w-1/2
                   h-1/2
@@ -109,7 +170,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
                 text-[14px]
                 ${tag.color}
                 `}
-                >
+            >
               #{tag.name}
             </p>
           ))}

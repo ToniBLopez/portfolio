@@ -15,13 +15,12 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  harvard,
+  itacademy,
+  platzi,
+  expirydates,
+  socialmedia,
+  bingogame,
   threejs,
 } from "../assets";
 
@@ -46,7 +45,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend Developer",
     icon: mobile,
   },
   {
@@ -54,7 +53,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Fullstack Developer",
     icon: creator,
   },
 ];
@@ -101,70 +100,57 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Full Stack Developer - Projects",
+    company_name: "Platzi",
+    icon: platzi,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Nov 2021 - Nov 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developing web applications using React.js and other related technologies.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Advanced knowledge of databases, with queries and data management.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full Stack Developer - Bootcamp",
+    company_name: "IT Academy",
+    icon: itacademy,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "March 2022 - May 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Deepening in detail in the bases of the programming languages HTML, CSS, and Javascript.",
+      "Carrying out group projects using the git version control system and developing soft and hard skills in teamwork.",
+      "Cultivate self-taught learning and increase the ability to solve problems autonomously.",
+      "Pressure management in work environments with deadlines.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "CS50x - Online Course",
+    company_name: "HarvardX",
+    icon: harvard,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "June 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "A broad and robust understanding of computer science and programming.",
+      "How to think algorithmically and solve programming problems efficiently.",
+      "Concepts like abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development.",
+      "Familiarity in a number of languages, including C, Python, SQL, and JavaScript plus CSS and HTML.",
     ],
   },
 ];
@@ -172,23 +158,23 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      'I thought it was impossible to make a website as beautiful as our product, but Toni proved me wrong.',
+    name: "Lara Herrero",
+    designation: "CIO",
+    company: "Hays",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
+      "I've never met a web developer who truly cares about their clients' success like Toni does.",
+    name: "Chris Miller",
+    designation: "Software Engineer",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Toni optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -198,67 +184,126 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Expiry Dates",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web application that helps to keep track of products that are going to expire soon, helping to facilitate their registration and review to ensure that stores do not have expired products for sale.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express.js",
+        color: "pink-text-gradient",
       },
       {
         name: "mongodb",
-        color: "green-text-gradient",
+        color: "orange-text-gradient",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "materialUI",
+        color: "white-text-gradient",
+      },
+      {
+        name: "webpack",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "green-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: expirydates,
+    source_code_link: "https://github.com/ToniBLopez/AO-expiry-dates",
+    live_link: "https://expirydates.fly.dev",
+    figma_link: "https://www.figma.com/file/UFwTMR5ZfRx4pFKIZtYexg/AO-Expiry-Dates-App?type=design&node-id=0%3A1&mode=design&t=YNE1A5Net1TCsXWA-1",
   },
   {
-    name: "Job IT",
+    name: "Social Media",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Social network made with MERN stack that allows you to upload posts, read comments, give and receive likes, access other people's public profiles and follow and unfollow whoever you want. This social network has the necessary bases so that it can be developed and improved, which is why it serves as the base project for a social network deployed to the world.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "node.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "express.js",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
+        name: "mongodb",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "materialUI",
+        color: "white-text-gradient",
+      },
+      {
+        name: "webpack",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "jwt",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "bcrypt",
         color: "pink-text-gradient",
       },
+      {
+        name: "yup&formik",
+        color: "orange-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: socialmedia,
+    source_code_link: "https://gitlab.com/ToniBLopez/social-media-web-app",
+    live_link: "https://socialmediaproject.fly.dev/",
+    figma_link: "https://www.figma.com/file/GvhFMjkPIVvp92fT2k7kdO/Social-Media-App?type=design&node-id=0%3A1&mode=design&t=t3vhcUzwu2EakutI-1",
+  },
+  {
+    name: "Bingo Game",
+    description:
+      "A great live game web app, that enables to play whith other real persons in real time. You can test this game app opening more than one window and play with another player at the same time.",
+    // "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "socket.io",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "express.js",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "materialUI",
+        color: "white-text-gradient",
+      },
+      {
+        name: "webpack",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: bingogame,
+    source_code_link: "https://gitlab.com/ToniBLopez/live-bingo-game",
+    live_link: "https://bingogame.fly.dev/",
+    figma_link: "",
   },
 ]
 

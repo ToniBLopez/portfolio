@@ -29,8 +29,8 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915eff]'>Toni</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop user interfaces and <br className='sm:block hidden' />
-            web applications with React
+            I develop user interfaces and web<br className='sm:block hidden' />
+            applications with MERN stack
           </p>
         </div>
       </div>
@@ -58,7 +58,7 @@ const Hero = () => {
               p-2
               rounded-3xl
               border-4
-            border-secondary
+              border-secondary
           '>
             <motion.div
               animate={{
