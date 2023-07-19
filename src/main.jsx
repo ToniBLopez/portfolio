@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode> //  Is only for development mode, remove for production
     <App />
-  </React.StrictMode>,
+  // </React.StrictMode>,
 )
