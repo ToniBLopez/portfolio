@@ -186,7 +186,7 @@ const projects = [
   {
     name: "Expiry Dates",
     description:
-      "Web application that helps to keep track of products that are going to expire soon, helping to facilitate their registration and review to ensure that stores do not have expired products for sale.",
+      "Web application for the company Ametller Origen that helps to keep track of products that are going to expire soon, helping to facilitate their registration and review to ensure that stores do not have expired products for sale.",
     tags: [
       {
         name: "react",
